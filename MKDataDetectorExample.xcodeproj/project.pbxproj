@@ -79,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				A811D6F71F1CC8380087B076 /* View Controllers */,
+				A8B648841F1CCA330031AA54 /* Assets & Storyboard */,
 				A811D6F61F1CC8280087B076 /* Configuration */,
 			);
 			path = MKDataDetectorExample;
@@ -88,9 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				A811D6E41F1CC7DA0087B076 /* AppDelegate.swift */,
-				A811D6E81F1CC7DA0087B076 /* Main.storyboard */,
-				A811D6EB1F1CC7DA0087B076 /* Assets.xcassets */,
-				A811D6ED1F1CC7DA0087B076 /* LaunchScreen.storyboard */,
 				A811D6F01F1CC7DA0087B076 /* Info.plist */,
 			);
 			name = Configuration;
@@ -102,6 +100,16 @@
 				A811D6E61F1CC7DA0087B076 /* WelcomeViewController.swift */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A8B648841F1CCA330031AA54 /* Assets & Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A811D6E81F1CC7DA0087B076 /* Main.storyboard */,
+				A811D6ED1F1CC7DA0087B076 /* LaunchScreen.storyboard */,
+				A811D6EB1F1CC7DA0087B076 /* Assets.xcassets */,
+			);
+			name = "Assets & Storyboard";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,6 +369,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mayank.MKDataDetectorExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -375,6 +384,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mayank.MKDataDetectorExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -397,6 +407,7 @@
 				A811D6F51F1CC7DA0087B076 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
