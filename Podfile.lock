@@ -1,0 +1,21 @@
+PODS:
+  - MKDataDetector (0.9.0)
+
+DEPENDENCIES:
+  - MKDataDetector (from `https://github.com/mayankk2308/mkdatadetector-swift.git`)
+
+EXTERNAL SOURCES:
+  MKDataDetector:
+    :git: https://github.com/mayankk2308/mkdatadetector-swift.git
+
+CHECKOUT OPTIONS:
+  MKDataDetector:
+    :commit: '0755489b68da4187afef789f567763c83ae4b2e2'
+    :git: https://github.com/mayankk2308/mkdatadetector-swift.git
+
+SPEC CHECKSUMS:
+  MKDataDetector: e1bfa3c87d5788c6ff10c595b60fba02fbe9ad4f
+
+PODFILE CHECKSUM: c73f9692c8f2d4ea4001c67e2d5cef30bc293e7e
+
+COCOAPODS: 1.2.1

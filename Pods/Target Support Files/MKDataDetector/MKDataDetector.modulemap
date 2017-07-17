@@ -1,0 +1,6 @@
+framework module MKDataDetector {
+  umbrella header "MKDataDetector-umbrella.h"
+
+  export *
+  module * { export * }
+}
