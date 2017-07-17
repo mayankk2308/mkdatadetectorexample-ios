@@ -89,7 +89,9 @@
                     </view>
                     <connections>
                         <outlet property="addressLabel" destination="puJ-yL-jmN" id="cHd-a6-uTm"/>
+                        <outlet property="addressTypeField" destination="SHR-Yw-btZ" id="auC-Nn-vyU"/>
                         <outlet property="eventLabel" destination="OHf-kN-OCt" id="TTw-2L-51f"/>
+                        <outlet property="eventTypeField" destination="zcv-Xd-HIG" id="gP5-Ku-efE"/>
                         <outlet property="linkLabel" destination="74T-K5-jE3" id="Qbn-Ay-HAU"/>
                     </connections>
                 </viewController>
