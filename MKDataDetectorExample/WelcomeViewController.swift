@@ -32,19 +32,13 @@ class WelcomeViewController: UIViewController, UITextFieldDelegate {
         if textField == eventTypeField {
             guard let text = textField.text else { return }
             if let results = dataDetectorService.extractDates(fromTextBody: text) {
-                guard let analysisResult = results.first else { return }
-                let attributedString = NSMutableAttributedString(string: analysisResult.source)
-                attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor.purple, range: analysisResult.rangeInSource)
-                textField.attributedText = attributedString
+                textField.attributedText = dataDetectorService.attributedText(fromAnalysisResults: results, withColor: UIColor.yellow.cgColor)
             }
         }
         else {
             guard let text = textField.text else { return }
             if let results = dataDetectorService.extractAddresses(fromTextBody: text) {
-                guard let analysisResult = results.first else { return }
-                let attributedString = NSMutableAttributedString(string: analysisResult.source)
-                attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor.purple, range: analysisResult.rangeInSource)
-                textField.attributedText = attributedString
+                textField.attributedText = dataDetectorService.attributedText(fromAnalysisResults: results, withColor: UIColor.green.cgColor)
             }
         }
     }
@@ -57,31 +51,22 @@ extension UILabel {
         let dataDetectorService = MKDataDetectorService()
         guard let textBody = text else { return }
         guard let dates = dataDetectorService.extractDates(fromTextBody: textBody) else { return }
-        guard let analysisResult = dates.first else { return }
-        let attributedString = NSMutableAttributedString(string: analysisResult.source)
-        attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor.purple, range: analysisResult.rangeInSource)
-        attributedText = attributedString
+        attributedText = dataDetectorService.attributedText(fromAnalysisResults: dates, withColor: UIColor.purple.cgColor)
     }
     
     func highlightAddresses() {
         let dataDetectorService = MKDataDetectorService()
         guard let textBody = text else { return }
-        guard let dates = dataDetectorService.extractAddresses(fromTextBody: textBody) else { return }
-        guard let analysisResult = dates.first else { return }
-        let attributedString = NSMutableAttributedString(string: analysisResult.source)
-        attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor.orange, range: analysisResult.rangeInSource)
-        attributedText = attributedString
+        guard let addresses = dataDetectorService.extractAddresses(fromTextBody: textBody) else { return }
+        attributedText = dataDetectorService.attributedText(fromAnalysisResults: addresses, withColor: UIColor.orange.cgColor)
     }
     
     func highlightLinks() {
         
         let dataDetectorService = MKDataDetectorService()
         guard let textBody = text else { return }
-        guard let dates = dataDetectorService.extractLinks(fromTextBody: textBody) else { return }
-        guard let analysisResult = dates.first else { return }
-        let attributedString = NSMutableAttributedString(string: analysisResult.source)
-        attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor.blue, range: analysisResult.rangeInSource)
-        attributedText = attributedString
+        guard let links = dataDetectorService.extractLinks(fromTextBody: textBody) else { return }
+        attributedText = dataDetectorService.attributedText(fromAnalysisResults: links, withColor: UIColor.blue.cgColor)
     }
 }
 

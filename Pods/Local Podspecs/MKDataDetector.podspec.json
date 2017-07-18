@@ -1,6 +1,6 @@
 {
   "name": "MKDataDetector",
-  "version": "0.9.0",
+  "version": "0.9.4",
   "platforms": {
     "ios": "8.0",
     "osx": "10.9"
@@ -11,7 +11,7 @@
   },
   "source": {
     "git": "https://github.com/mayankk2308/mkdatadetector-swift.git",
-    "tag": "0.9.0"
+    "tag": "0.9.4"
   },
   "authors": {
     "Mayank Kumar": "mayankk2308@gmail.com",

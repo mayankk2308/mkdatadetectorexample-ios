@@ -1,5 +1,5 @@
 PODS:
-  - MKDataDetector (0.9.0)
+  - MKDataDetector (0.9.4)
 
 DEPENDENCIES:
   - MKDataDetector (from `https://github.com/mayankk2308/mkdatadetector-swift.git`)
@@ -10,11 +10,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   MKDataDetector:
-    :commit: '0755489b68da4187afef789f567763c83ae4b2e2'
+    :commit: eb55118899b8cd18d395ec7fcd5e942c0d3cc97c
     :git: https://github.com/mayankk2308/mkdatadetector-swift.git
 
 SPEC CHECKSUMS:
-  MKDataDetector: e1bfa3c87d5788c6ff10c595b60fba02fbe9ad4f
+  MKDataDetector: 37898bc84179314063d656060f58f830a8574460
 
 PODFILE CHECKSUM: c73f9692c8f2d4ea4001c67e2d5cef30bc293e7e
 
