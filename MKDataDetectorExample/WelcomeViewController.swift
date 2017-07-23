@@ -21,11 +21,12 @@ class WelcomeViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        eventLabel.highlightDates()
-        addressLabel.highlightAddresses()
-        linkLabel.highlightLinks()
         eventTypeField.delegate = self
         addressTypeField.delegate = self
+//        testOtherExamples()
+        if let eventLabelResults = dataDetectorService.extractInformation(fromTextBody: eventLabel.text!, withResultTypes: .date, .link, .address, .phoneNumber) {
+            eventLabel.highlightData(withResults: eventLabelResults, withColor: .purple)
+        }
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
@@ -42,31 +43,27 @@ class WelcomeViewController: UIViewController, UITextFieldDelegate {
             }
         }
     }
+    
+    func testOtherExamples() {
+        let meeting = "Meeting at 9pm next Monday"
+        guard let meetingDates = meeting.dates else { return }
+        for meetingDate in meetingDates { print(meetingDate) }
+        guard let meetingResults = dataDetectorService.extractDates(fromTextBody: meeting) else { return }
+        dataDetectorService.addEventToDefaultCalendar(withAnalysisResult: meetingResults.first!) { success in
+            if success {
+                print("event added to calendar!")
+            }
+        }
+    }
 
 }
 
 extension UILabel {
     
-    func highlightDates() {
+    func highlightData(withResults results: [GenericAnalysisResult], withColor color: UIColor) {
         let dataDetectorService = MKDataDetectorService()
-        guard let textBody = text else { return }
-        guard let dates = dataDetectorService.extractDates(fromTextBody: textBody) else { return }
-        attributedText = dataDetectorService.attributedText(fromAnalysisResults: dates, withColor: UIColor.purple.cgColor)
-    }
-    
-    func highlightAddresses() {
-        let dataDetectorService = MKDataDetectorService()
-        guard let textBody = text else { return }
-        guard let addresses = dataDetectorService.extractAddresses(fromTextBody: textBody) else { return }
-        attributedText = dataDetectorService.attributedText(fromAnalysisResults: addresses, withColor: UIColor.orange.cgColor)
-    }
-    
-    func highlightLinks() {
-        
-        let dataDetectorService = MKDataDetectorService()
-        guard let textBody = text else { return }
-        guard let links = dataDetectorService.extractLinks(fromTextBody: textBody) else { return }
-        attributedText = dataDetectorService.attributedText(fromAnalysisResults: links, withColor: UIColor.blue.cgColor)
+        guard let attributedText = dataDetectorService.attributedText(fromAnalysisResults: results, withColor: color.cgColor) else { return }
+        self.attributedText = attributedText
     }
 }
 

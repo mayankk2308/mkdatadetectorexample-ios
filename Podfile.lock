@@ -1,21 +1,12 @@
 PODS:
-  - MKDataDetector (0.9.4)
+  - MKDataDetector (1.0.0)
 
 DEPENDENCIES:
-  - MKDataDetector (from `https://github.com/mayankk2308/mkdatadetector-swift.git`)
-
-EXTERNAL SOURCES:
-  MKDataDetector:
-    :git: https://github.com/mayankk2308/mkdatadetector-swift.git
-
-CHECKOUT OPTIONS:
-  MKDataDetector:
-    :commit: eb55118899b8cd18d395ec7fcd5e942c0d3cc97c
-    :git: https://github.com/mayankk2308/mkdatadetector-swift.git
+  - MKDataDetector
 
 SPEC CHECKSUMS:
-  MKDataDetector: 37898bc84179314063d656060f58f830a8574460
+  MKDataDetector: 1a5bca1012e90870828b0f0c3bb601dc55a21cd2
 
-PODFILE CHECKSUM: c73f9692c8f2d4ea4001c67e2d5cef30bc293e7e
+PODFILE CHECKSUM: 7b866f8254bb2642f064880a3fdbebae754627ee
 
 COCOAPODS: 1.2.1

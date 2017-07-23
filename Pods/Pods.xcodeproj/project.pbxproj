@@ -7,24 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		100E0EC5FC6D6B297CDDC5BB3F221617 /* TransitInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DAE522B3C9CD442F94EA64976B355F /* TransitInformation.swift */; };
-		1902EDFEDA7D25A0176786D28C3AAFFD /* MKDataDetector-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2921D30116E05AAD69E8B7310CD365B8 /* MKDataDetector-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29681DAD590225277A28D557934F9EBC /* MultiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E90682AFF4F17495FC804495184A3A /* MultiData.swift */; };
+		01915C000EF4E4810EB28E7305542301 /* MKDataDetector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD0E185680D4B2E81AE241077C156F3 /* MKDataDetector-dummy.m */; };
+		080630C639FF331D9CE7C6B10D84E057 /* MKDataDetector-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 25766F4BFED29D2430FCFEDD4735F51B /* MKDataDetector-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CC3A9F98323895A79277BC1246EB000 /* CoreKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED2CB28A4E97678441AF5AC38EE638 /* CoreKeys.swift */; };
+		41C769F3141E89A5E01EAD056BE78EF6 /* AliasManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0870FD547A35D3DDA01D709F04F6D5 /* AliasManager.swift */; };
 		49656CE83024C1DD8A8B28A3FEEF800B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		523924056F139820EB3CB7947383848B /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D53FA4F7A0A605441E70C72313CFEA /* Link.swift */; };
-		65F3191D1E2E07C73A862CA958A87D63 /* StringAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E9A863BB40037A0D0D334D5C6D4BF /* StringAccess.swift */; };
-		66B1680192A6EEFCC2C0F6262CC0C510 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52080F7EADBA14708EC5404A3ED0C74E /* Date.swift */; };
+		4FC5D3488A7EA8A4C469883D559B1566 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70734F82464A92657BE1881BE296C51 /* Address.swift */; };
+		5BD9533F7D717717B1B28E10AC58DF51 /* MKDataDetectorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CDC68E97CF8FAD64079ABFB28005F7 /* MKDataDetectorService.swift */; };
+		5D0D40CE97DCDDB98549E68B099CED55 /* UtilityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B3A1FDB205972248D3A5433BFB685D /* UtilityExtensions.swift */; };
 		66EF7E62A50A5D54EB1290714B62F538 /* Pods-MKDataDetectorExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B223C29050FAFB89841786A0181C89DD /* Pods-MKDataDetectorExample-dummy.m */; };
-		6CF0ADAE9C367E96C7E2F38BD9064FA8 /* UtilityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1124E2262DF2177F13E6EC86B9EDCFBD /* UtilityExtensions.swift */; };
-		8ED056E33F440DF8F982D390A9A4EC77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		9CA3281E0F1F9AE408292ED6FE460CAB /* AnalysisResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE41CA10554E80B63294ED3B7635CBF3 /* AnalysisResult.swift */; };
-		9DED5B6D0F88F734135CBA41F2EBA8FC /* CoreKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C291C6D8F456E3C2354D700E5EBB65BA /* CoreKeys.swift */; };
-		A0A27B9B73EFF993EC871F46D1E42CDF /* MKDataDetectorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF38738945F0C6ABB18A848E2A259F /* MKDataDetectorService.swift */; };
-		A6FB751E724F85E5CD040B1D02B02E52 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4249C005ACD98B6DBC0BC428A2D2B7 /* PhoneNumber.swift */; };
+		6F5AD3B8EAE39CEB05B62A8A2C1F47F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		774EE72DEDA84B9B9C271168F5EF3AE3 /* ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF84ED74406DEEED520BBD990553191 /* ResultType.swift */; };
+		8A10893BA5E2C26F70F3FA95358EEEFA /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC96FFBCF87DF9CC0D8FBBE7C4992822 /* PhoneNumber.swift */; };
+		90969646677EDBBA0289F029798DF3D5 /* TransitInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E479F6024DA060BE152CAE3AE60B07 /* TransitInformation.swift */; };
+		B230CF5EE1D72CB90D20AD0C8C60700C /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659252992E126DD2C2616EC53DF74FE6 /* Date.swift */; };
+		B395C92A2BE3C5CE3C1AF58B47CEA9EE /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5755A3457D644B8049EFB4978CAB06 /* Link.swift */; };
 		B42DBA6E1902FC9939AB928BFFFECB62 /* Pods-MKDataDetectorExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3B2373ECDD889E4C4848873BA9B14CF /* Pods-MKDataDetectorExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1EA04B04B381E0EE0C45475D4469B88 /* MKDataDetector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E828A893CD78BAFD07EA54B7B6724BC2 /* MKDataDetector-dummy.m */; };
-		D6E600F9CCBB8B69B0D37CECC4F318E0 /* ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2548F5F2F199CD11861AE8BC74BD70 /* ResultType.swift */; };
-		F9B1CA617AEC6A8AF997F5C8C2B17D44 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E8F663979E5F12D8FCDD2C9AB32DDC /* Address.swift */; };
+		B59E2B30FE967E8ECC98B563C62167A2 /* MultiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FD29AB0B547E6F63923EF1CD04FF42 /* MultiData.swift */; };
+		C1BD4E895644D99CD488169083BF8B70 /* AnalysisResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34301CD9A2280CEA7167B6FAB2063F2 /* AnalysisResult.swift */; };
+		FCE124EF1BA600558BCD03FC0EEACE5F /* StringAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1F9B40EE84FEAD1286A9888C02AE41 /* StringAccess.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,55 +33,48 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4267D77DF096BE3A049C296A3403463C;
+			remoteGlobalIDString = 09FA7921FB0415E381442E9B16C94D46;
 			remoteInfo = MKDataDetector;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0CD14A8F661C3A32230F867325DD30B0 /* MKDataDetector-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKDataDetector-prefix.pch"; sourceTree = "<group>"; };
-		1124E2262DF2177F13E6EC86B9EDCFBD /* UtilityExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UtilityExtensions.swift; path = MKDataDetector/UtilityExtensions.swift; sourceTree = "<group>"; };
-		133642D004C55592D7F3D524835E5AB2 /* MKDataDetector.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MKDataDetector.modulemap; sourceTree = "<group>"; };
-		1594E8E9BE373EE77EE42542C59BE5F6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25766F4BFED29D2430FCFEDD4735F51B /* MKDataDetector-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKDataDetector-umbrella.h"; sourceTree = "<group>"; };
 		281C20BBA98B8464D814CA2527ADCC75 /* Pods-MKDataDetectorExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MKDataDetectorExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		2921D30116E05AAD69E8B7310CD365B8 /* MKDataDetector-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKDataDetector-umbrella.h"; sourceTree = "<group>"; };
-		298E9A863BB40037A0D0D334D5C6D4BF /* StringAccess.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringAccess.swift; path = MKDataDetector/StringAccess.swift; sourceTree = "<group>"; };
+		29FD29AB0B547E6F63923EF1CD04FF42 /* MultiData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiData.swift; path = MKDataDetector/MultiData.swift; sourceTree = "<group>"; };
 		2A0AFE930006F1CD88DB4BD1CE2EF19D /* Pods-MKDataDetectorExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MKDataDetectorExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2BD0E185680D4B2E81AE241077C156F3 /* MKDataDetector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKDataDetector-dummy.m"; sourceTree = "<group>"; };
+		2BED2CB28A4E97678441AF5AC38EE638 /* CoreKeys.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreKeys.swift; path = MKDataDetector/CoreKeys.swift; sourceTree = "<group>"; };
+		2EF84ED74406DEEED520BBD990553191 /* ResultType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultType.swift; path = MKDataDetector/ResultType.swift; sourceTree = "<group>"; };
 		3137C22C3479A37B3B1E1A9BE88D7FA3 /* Pods-MKDataDetectorExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKDataDetectorExample.release.xcconfig"; sourceTree = "<group>"; };
-		3D2548F5F2F199CD11861AE8BC74BD70 /* ResultType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultType.swift; path = MKDataDetector/ResultType.swift; sourceTree = "<group>"; };
+		3A9C6AE2A60DE44ADB9895E0A13634A4 /* MKDataDetector.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MKDataDetector.modulemap; sourceTree = "<group>"; };
 		3DF989219F48B574518A090585BC37AF /* Pods-MKDataDetectorExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MKDataDetectorExample.modulemap"; sourceTree = "<group>"; };
-		52080F7EADBA14708EC5404A3ED0C74E /* Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Date.swift; path = MKDataDetector/Date.swift; sourceTree = "<group>"; };
+		43E479F6024DA060BE152CAE3AE60B07 /* TransitInformation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitInformation.swift; path = MKDataDetector/TransitInformation.swift; sourceTree = "<group>"; };
+		659252992E126DD2C2616EC53DF74FE6 /* Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Date.swift; path = MKDataDetector/Date.swift; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		68E90682AFF4F17495FC804495184A3A /* MultiData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiData.swift; path = MKDataDetector/MultiData.swift; sourceTree = "<group>"; };
-		77E8F663979E5F12D8FCDD2C9AB32DDC /* Address.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Address.swift; path = MKDataDetector/Address.swift; sourceTree = "<group>"; };
+		6705024C00D724B208DBAF5B6F2530E0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		793232A51AFD813665D44D0F384DCED0 /* Pods_MKDataDetectorExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MKDataDetectorExample.framework; path = "Pods-MKDataDetectorExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9361E8D57F4DBC955458D63E311E1E33 /* MKDataDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MKDataDetector.framework; path = MKDataDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96AA4CBF5D37E9BFE36F6D46BFA572FA /* MKDataDetector.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MKDataDetector.xcconfig; sourceTree = "<group>"; };
 		9E8794094817E91B39BAA4A67424E7EF /* Pods-MKDataDetectorExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MKDataDetectorExample-frameworks.sh"; sourceTree = "<group>"; };
+		A0CDC68E97CF8FAD64079ABFB28005F7 /* MKDataDetectorService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKDataDetectorService.swift; path = MKDataDetector/MKDataDetectorService.swift; sourceTree = "<group>"; };
+		AA1F9B40EE84FEAD1286A9888C02AE41 /* StringAccess.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringAccess.swift; path = MKDataDetector/StringAccess.swift; sourceTree = "<group>"; };
+		AC96FFBCF87DF9CC0D8FBBE7C4992822 /* PhoneNumber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneNumber.swift; path = MKDataDetector/PhoneNumber.swift; sourceTree = "<group>"; };
 		ADEECBE40C023B7B0E50CC08AF27B99C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE41CA10554E80B63294ED3B7635CBF3 /* AnalysisResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnalysisResult.swift; path = MKDataDetector/AnalysisResult.swift; sourceTree = "<group>"; };
-		B0DAE522B3C9CD442F94EA64976B355F /* TransitInformation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitInformation.swift; path = MKDataDetector/TransitInformation.swift; sourceTree = "<group>"; };
 		B223C29050FAFB89841786A0181C89DD /* Pods-MKDataDetectorExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MKDataDetectorExample-dummy.m"; sourceTree = "<group>"; };
-		B85D2A204DBE1DB9326175EEE765B779 /* MKDataDetector.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MKDataDetector.xcconfig; sourceTree = "<group>"; };
-		C291C6D8F456E3C2354D700E5EBB65BA /* CoreKeys.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreKeys.swift; path = MKDataDetector/CoreKeys.swift; sourceTree = "<group>"; };
 		C3B2373ECDD889E4C4848873BA9B14CF /* Pods-MKDataDetectorExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MKDataDetectorExample-umbrella.h"; sourceTree = "<group>"; };
-		C4D53FA4F7A0A605441E70C72313CFEA /* Link.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Link.swift; path = MKDataDetector/Link.swift; sourceTree = "<group>"; };
 		C534AE25811E831B2418AC79078328BC /* Pods-MKDataDetectorExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKDataDetectorExample.debug.xcconfig"; sourceTree = "<group>"; };
 		C8E906F84BA1FA4E5F68B1BD05386386 /* Pods-MKDataDetectorExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MKDataDetectorExample-resources.sh"; sourceTree = "<group>"; };
-		D2FF38738945F0C6ABB18A848E2A259F /* MKDataDetectorService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKDataDetectorService.swift; path = MKDataDetector/MKDataDetectorService.swift; sourceTree = "<group>"; };
-		E828A893CD78BAFD07EA54B7B6724BC2 /* MKDataDetector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKDataDetector-dummy.m"; sourceTree = "<group>"; };
-		EE4249C005ACD98B6DBC0BC428A2D2B7 /* PhoneNumber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneNumber.swift; path = MKDataDetector/PhoneNumber.swift; sourceTree = "<group>"; };
+		E34301CD9A2280CEA7167B6FAB2063F2 /* AnalysisResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnalysisResult.swift; path = MKDataDetector/AnalysisResult.swift; sourceTree = "<group>"; };
+		E70734F82464A92657BE1881BE296C51 /* Address.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Address.swift; path = MKDataDetector/Address.swift; sourceTree = "<group>"; };
+		EA0870FD547A35D3DDA01D709F04F6D5 /* AliasManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AliasManager.swift; path = MKDataDetector/AliasManager.swift; sourceTree = "<group>"; };
+		EBCF3AFACCC2F1C947A76EC68B986DFC /* MKDataDetector-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKDataDetector-prefix.pch"; sourceTree = "<group>"; };
+		F4B3A1FDB205972248D3A5433BFB685D /* UtilityExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UtilityExtensions.swift; path = MKDataDetector/UtilityExtensions.swift; sourceTree = "<group>"; };
+		FB5755A3457D644B8049EFB4978CAB06 /* Link.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Link.swift; path = MKDataDetector/Link.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2D6EDBD36202F3B43DA84F5F1D76F823 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8ED056E33F440DF8F982D390A9A4EC77 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3CBE46B576CEB59E0A45D5E40C28AAFB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -89,28 +83,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C286C745156877C4FD4DAABDFE52F522 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F5AD3B8EAE39CEB05B62A8A2C1F47F6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AA8D1068B0DCABDCAF87F8DBA77448C /* MKDataDetector */ = {
+		0C257D098F9538E7553DE8DA8A0D71C5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				77E8F663979E5F12D8FCDD2C9AB32DDC /* Address.swift */,
-				AE41CA10554E80B63294ED3B7635CBF3 /* AnalysisResult.swift */,
-				C291C6D8F456E3C2354D700E5EBB65BA /* CoreKeys.swift */,
-				52080F7EADBA14708EC5404A3ED0C74E /* Date.swift */,
-				C4D53FA4F7A0A605441E70C72313CFEA /* Link.swift */,
-				D2FF38738945F0C6ABB18A848E2A259F /* MKDataDetectorService.swift */,
-				68E90682AFF4F17495FC804495184A3A /* MultiData.swift */,
-				EE4249C005ACD98B6DBC0BC428A2D2B7 /* PhoneNumber.swift */,
-				3D2548F5F2F199CD11861AE8BC74BD70 /* ResultType.swift */,
-				298E9A863BB40037A0D0D334D5C6D4BF /* StringAccess.swift */,
-				B0DAE522B3C9CD442F94EA64976B355F /* TransitInformation.swift */,
-				1124E2262DF2177F13E6EC86B9EDCFBD /* UtilityExtensions.swift */,
-				9CAD33CCFE41BEA186CBB51C8A4FBF59 /* Support Files */,
+				6705024C00D724B208DBAF5B6F2530E0 /* Info.plist */,
+				3A9C6AE2A60DE44ADB9895E0A13634A4 /* MKDataDetector.modulemap */,
+				96AA4CBF5D37E9BFE36F6D46BFA572FA /* MKDataDetector.xcconfig */,
+				2BD0E185680D4B2E81AE241077C156F3 /* MKDataDetector-dummy.m */,
+				EBCF3AFACCC2F1C947A76EC68B986DFC /* MKDataDetector-prefix.pch */,
+				25766F4BFED29D2430FCFEDD4735F51B /* MKDataDetector-umbrella.h */,
 			);
-			name = MKDataDetector;
-			path = MKDataDetector;
+			name = "Support Files";
+			path = "../Target Support Files/MKDataDetector";
 			sourceTree = "<group>";
 		};
 		7B90C1FAFB8804EE2171252741A0A4AC /* Pods-MKDataDetectorExample */ = {
@@ -136,7 +131,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				C9D10A63301F9B7086BFFE3A8FBB8909 /* Pods */,
+				ED10ACCE8D27AAA84052CD4446B02B1B /* Pods */,
 				8D1B561BB6440334DA9696F231DAD8A7 /* Products */,
 				D4817649BC62F792475C145EAE7C4456 /* Targets Support Files */,
 			);
@@ -151,18 +146,26 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9CAD33CCFE41BEA186CBB51C8A4FBF59 /* Support Files */ = {
+		A4E982AC9B13CAB5C6FAAB43F20C03A6 /* MKDataDetector */ = {
 			isa = PBXGroup;
 			children = (
-				1594E8E9BE373EE77EE42542C59BE5F6 /* Info.plist */,
-				133642D004C55592D7F3D524835E5AB2 /* MKDataDetector.modulemap */,
-				B85D2A204DBE1DB9326175EEE765B779 /* MKDataDetector.xcconfig */,
-				E828A893CD78BAFD07EA54B7B6724BC2 /* MKDataDetector-dummy.m */,
-				0CD14A8F661C3A32230F867325DD30B0 /* MKDataDetector-prefix.pch */,
-				2921D30116E05AAD69E8B7310CD365B8 /* MKDataDetector-umbrella.h */,
+				E70734F82464A92657BE1881BE296C51 /* Address.swift */,
+				EA0870FD547A35D3DDA01D709F04F6D5 /* AliasManager.swift */,
+				E34301CD9A2280CEA7167B6FAB2063F2 /* AnalysisResult.swift */,
+				2BED2CB28A4E97678441AF5AC38EE638 /* CoreKeys.swift */,
+				659252992E126DD2C2616EC53DF74FE6 /* Date.swift */,
+				FB5755A3457D644B8049EFB4978CAB06 /* Link.swift */,
+				A0CDC68E97CF8FAD64079ABFB28005F7 /* MKDataDetectorService.swift */,
+				29FD29AB0B547E6F63923EF1CD04FF42 /* MultiData.swift */,
+				AC96FFBCF87DF9CC0D8FBBE7C4992822 /* PhoneNumber.swift */,
+				2EF84ED74406DEEED520BBD990553191 /* ResultType.swift */,
+				AA1F9B40EE84FEAD1286A9888C02AE41 /* StringAccess.swift */,
+				43E479F6024DA060BE152CAE3AE60B07 /* TransitInformation.swift */,
+				F4B3A1FDB205972248D3A5433BFB685D /* UtilityExtensions.swift */,
+				0C257D098F9538E7553DE8DA8A0D71C5 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/MKDataDetector";
+			name = MKDataDetector;
+			path = MKDataDetector;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -171,14 +174,6 @@
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C9D10A63301F9B7086BFFE3A8FBB8909 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0AA8D1068B0DCABDCAF87F8DBA77448C /* MKDataDetector */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -197,9 +192,25 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		ED10ACCE8D27AAA84052CD4446B02B1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4E982AC9B13CAB5C6FAAB43F20C03A6 /* MKDataDetector */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		3DFB4094EBFBA68B82EBCC09E94D0E43 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				080630C639FF331D9CE7C6B10D84E057 /* MKDataDetector-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		87940BFF1DB10E775CBA79CF4CC94DF1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -208,24 +219,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B4B88DB9083F81E51C74E59D32392555 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1902EDFEDA7D25A0176786D28C3AAFFD /* MKDataDetector-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4267D77DF096BE3A049C296A3403463C /* MKDataDetector */ = {
+		09FA7921FB0415E381442E9B16C94D46 /* MKDataDetector */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 61BB6F974EA81CA02F7B3721D1A3237A /* Build configuration list for PBXNativeTarget "MKDataDetector" */;
+			buildConfigurationList = FB5005396F77E563597B7CA247BD2C7E /* Build configuration list for PBXNativeTarget "MKDataDetector" */;
 			buildPhases = (
-				DAEA1AF3FF4C083AC96C8DEE8DCA9C0B /* Sources */,
-				2D6EDBD36202F3B43DA84F5F1D76F823 /* Frameworks */,
-				B4B88DB9083F81E51C74E59D32392555 /* Headers */,
+				26F0A47EE8431F9ABF019E7DAF965123 /* Sources */,
+				C286C745156877C4FD4DAABDFE52F522 /* Frameworks */,
+				3DFB4094EBFBA68B82EBCC09E94D0E43 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -275,38 +278,39 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4267D77DF096BE3A049C296A3403463C /* MKDataDetector */,
+				09FA7921FB0415E381442E9B16C94D46 /* MKDataDetector */,
 				428B44AB7FAAE79A71C2222A06BF46F3 /* Pods-MKDataDetectorExample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		26F0A47EE8431F9ABF019E7DAF965123 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FC5D3488A7EA8A4C469883D559B1566 /* Address.swift in Sources */,
+				41C769F3141E89A5E01EAD056BE78EF6 /* AliasManager.swift in Sources */,
+				C1BD4E895644D99CD488169083BF8B70 /* AnalysisResult.swift in Sources */,
+				2CC3A9F98323895A79277BC1246EB000 /* CoreKeys.swift in Sources */,
+				B230CF5EE1D72CB90D20AD0C8C60700C /* Date.swift in Sources */,
+				B395C92A2BE3C5CE3C1AF58B47CEA9EE /* Link.swift in Sources */,
+				01915C000EF4E4810EB28E7305542301 /* MKDataDetector-dummy.m in Sources */,
+				5BD9533F7D717717B1B28E10AC58DF51 /* MKDataDetectorService.swift in Sources */,
+				B59E2B30FE967E8ECC98B563C62167A2 /* MultiData.swift in Sources */,
+				8A10893BA5E2C26F70F3FA95358EEEFA /* PhoneNumber.swift in Sources */,
+				774EE72DEDA84B9B9C271168F5EF3AE3 /* ResultType.swift in Sources */,
+				FCE124EF1BA600558BCD03FC0EEACE5F /* StringAccess.swift in Sources */,
+				90969646677EDBBA0289F029798DF3D5 /* TransitInformation.swift in Sources */,
+				5D0D40CE97DCDDB98549E68B099CED55 /* UtilityExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		666CD8FB5D2C961EE8C73815785FA8F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				66EF7E62A50A5D54EB1290714B62F538 /* Pods-MKDataDetectorExample-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DAEA1AF3FF4C083AC96C8DEE8DCA9C0B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F9B1CA617AEC6A8AF997F5C8C2B17D44 /* Address.swift in Sources */,
-				9CA3281E0F1F9AE408292ED6FE460CAB /* AnalysisResult.swift in Sources */,
-				9DED5B6D0F88F734135CBA41F2EBA8FC /* CoreKeys.swift in Sources */,
-				66B1680192A6EEFCC2C0F6262CC0C510 /* Date.swift in Sources */,
-				523924056F139820EB3CB7947383848B /* Link.swift in Sources */,
-				D1EA04B04B381E0EE0C45475D4469B88 /* MKDataDetector-dummy.m in Sources */,
-				A0A27B9B73EFF993EC871F46D1E42CDF /* MKDataDetectorService.swift in Sources */,
-				29681DAD590225277A28D557934F9EBC /* MultiData.swift in Sources */,
-				A6FB751E724F85E5CD040B1D02B02E52 /* PhoneNumber.swift in Sources */,
-				D6E600F9CCBB8B69B0D37CECC4F318E0 /* ResultType.swift in Sources */,
-				65F3191D1E2E07C73A862CA958A87D63 /* StringAccess.swift in Sources */,
-				100E0EC5FC6D6B297CDDC5BB3F221617 /* TransitInformation.swift in Sources */,
-				6CF0ADAE9C367E96C7E2F38BD9064FA8 /* UtilityExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +320,7 @@
 		3BCD83E0887A1458AC1FD0DA4EC085A7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MKDataDetector;
-			target = 4267D77DF096BE3A049C296A3403463C /* MKDataDetector */;
+			target = 09FA7921FB0415E381442E9B16C94D46 /* MKDataDetector */;
 			targetProxy = 1A0460E101AB15205CDEDF5258C81B2E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -370,16 +374,16 @@
 			};
 			name = Debug;
 		};
-		65910163E28CC5ABE3321866DBCAEB8B /* Release */ = {
+		6B9254F0826EAB63A5039C8DD66C69A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B85D2A204DBE1DB9326175EEE765B779 /* MKDataDetector.xcconfig */;
+			baseConfigurationReference = 96AA4CBF5D37E9BFE36F6D46BFA572FA /* MKDataDetector.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -392,17 +396,18 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MKDataDetector/MKDataDetector.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = MKDataDetector;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		6DE3BADABEA93CCE6E580C3ECCA531CE /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -486,16 +491,16 @@
 			};
 			name = Release;
 		};
-		8FD1E4EC72E767786579ED276CE92BA1 /* Debug */ = {
+		CB5BE28956E15CF0F7C82E9DE0267B5B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B85D2A204DBE1DB9326175EEE765B779 /* MKDataDetector.xcconfig */;
+			baseConfigurationReference = 96AA4CBF5D37E9BFE36F6D46BFA572FA /* MKDataDetector.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -508,18 +513,17 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MKDataDetector/MKDataDetector.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = MKDataDetector;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		F07551CF9A46D605406BC34D10B3BBF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -572,20 +576,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		61BB6F974EA81CA02F7B3721D1A3237A /* Build configuration list for PBXNativeTarget "MKDataDetector" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8FD1E4EC72E767786579ED276CE92BA1 /* Debug */,
-				65910163E28CC5ABE3321866DBCAEB8B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		AAB12B1F8A893B9D02CF6DE5FB26AD57 /* Build configuration list for PBXNativeTarget "Pods-MKDataDetectorExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F07551CF9A46D605406BC34D10B3BBF0 /* Debug */,
 				6DE3BADABEA93CCE6E580C3ECCA531CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB5005396F77E563597B7CA247BD2C7E /* Build configuration list for PBXNativeTarget "MKDataDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B9254F0826EAB63A5039C8DD66C69A5 /* Debug */,
+				CB5BE28956E15CF0F7C82E9DE0267B5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

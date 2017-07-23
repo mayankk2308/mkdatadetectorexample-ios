@@ -18,13 +18,15 @@ While **Apple's** `NSDataDetector` is useful for extracting useful information f
 
 There are multiple installation options to choose from.
 
-### CocoaPods
+### CocoaPods (Preferred)
 
-To test pre-release versions:
-`pod 'MKDataDetector', :git => https://github.com/mayankk2308/mkdatadetector-swift.git`
-
-Once available on **CocoaPods**, simply use:
+To install via CocoaPods, add the following line to your **Podfile**:
 `pod 'MKDataDetector'`
+
+### Carthage
+
+To install via Carthage, add the following line to your **Cartfile**:
+`github "mayankk2308/mkdatadetector-swift" == 1.0.0`
 
 ### Manual
 
@@ -35,7 +37,22 @@ Once available on **CocoaPods**, simply use:
 
 ## Usage
 
-On building the framework, you can immediately use basic functionality as an extension of `String`:
+To keep things simple, `MKDataDetectorService` is packaged as a set of extensions that compartmentalize its following capabilities:
+
+* Date - date extraction
+* Address - address extraction
+* Link - link extraction
+* Phone Number - phone number detection
+* Transit Information - flight information extraction, etc.
+
+In addition to extracting these features, the framework also provides convenience functions to manipulate and organize this data.
+
+To import and use the `MKDataDetectorService` class, add the following statement to your `.swift` file:
+```swift
+import MKDataDetector
+```
+
+You can use basic functionality as an extension of `String`:
 ```swift
 let testString: String = "sampleText"
 
@@ -50,22 +67,7 @@ if let links: [URL] = testString.links {
 }
 ```
 
-Similar extensions exist for addresses, transit, and phone numbers as well.
-
-For more informative responses, you can import and use the `MKDataDetectorService` class:
-```swift
-import MKDataDetector
-```
-
-To keep things simple, `MKDataDetectorService` is packaged as a set of extensions that compartmentalize its following capabilities:
-
-* Date - date extraction
-* Address - address extraction
-* Link - link extraction
-* Phone Number - phone number detection
-* Transit Information - flight information extraction, etc.
-
-In addition to extracting these features, the framework also provides convenience functions to manipulate and organize this data.
+Similar extensions exist for addresses, transit, and phone numbers as well. For more informative results, you may want to initialize the service.
 
 ### Initialization
 
@@ -196,6 +198,8 @@ if let attributedText = dataDetectorService.attributedText(fromAnalysisResults: 
 }
 ```
 
+More convenience capabilities will be incorporated into future releases.
+
 ### Examples
 
 Consider the following inputs:
@@ -233,7 +237,7 @@ dataDetectorService.addEventToDefaultCalendar(withAnalysisResult: partyAnalysisR
 }
 ```
 
-Lets assume that the `meeting` text was embedded in a `UILabel` or equivalent text-oriented view. It was also expanded to add *" and next Friday at 5pm"*. You can easily update the label to display the **multiple detected** pieces of information (typically a substring of the text in the label):
+Let's assume that the `meeting` text was embedded in a `UILabel` or equivalent text-oriented view. Let's call it `meetingLabel`. It was also expanded to add *" and next Friday at 5pm"*. You can easily update the label to display the **multiple detected** pieces of information (typically a substring of the text in the label):
 ```swift
 if let attributedText = dataDetectorService.attributedText(withAnalysisResults: meetingAnalysisResults, withColor: UIColor.purple.cgcolor) {
     meetingLabel.attributedText = attributedText
@@ -247,14 +251,17 @@ Your `meetingLabel` will now display the original text with the detected informa
 
 According to Apple's documentation on `NSDataDetector`, the class can currently match dates, addresses, links, phone numbers and transit information, and not other present properties such as grammar and spelling. They have been excluded from this framework as well.
 
-Additionally, `NSDataDetector`, while having the facility of extracting airline information from natural language text, does not extract the names of airlines, and only retrieves the flight number data. We are looking into this.
+Additionally, `NSDataDetector` does not detect:
+* the name, job title, organization & phone number components of an address
+* the airline name component for transit information
+
+We are looking into this at the moment.
 
 ## Contact
 
 You can contact:
 * [Mayank Kumar](https://github.com/mayankk2308) - via [email](mailto:mayankk2308@gmail.com) or [LinkedIn](https://www.linkedin.com/in/mayank-kumar-478245b1/)
 * [Jeet Parte](https://github.com/jeetparte) - via [email](mailto:jeetparte@gmail.com)
-* [Pinak Jalan](https://github.com/pinakj) - via [email](mailto:pinak.jalan@me.com)
 
 for any inquires or community-related issues.
 

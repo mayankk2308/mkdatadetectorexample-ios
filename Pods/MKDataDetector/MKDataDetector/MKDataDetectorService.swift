@@ -7,10 +7,11 @@
 //
 
 import Foundation
-import CoreLocation
 
+/// The primary service class that drives MKDataDetector capabilities.
 public class MKDataDetectorService {
     
+    /// Maps `ResultType` types to `NSTextCheckingResult.CheckingType` types.
     internal let checkingTypeMap = [
         ResultType.date: NSTextCheckingResult.CheckingType.date,
         ResultType.address: NSTextCheckingResult.CheckingType.address,
@@ -19,6 +20,7 @@ public class MKDataDetectorService {
         ResultType.transitInformation: NSTextCheckingResult.CheckingType.transitInformation
     ]
     
+    /// Maps `NSTextCheckingResult.CheckingType.RawValue` types to `ResultType` types.
     internal let inverseCheckingTypeMap: [NSTextCheckingResult.CheckingType.RawValue : ResultType] = [
         NSTextCheckingResult.CheckingType.date.rawValue: ResultType.date,
         NSTextCheckingResult.CheckingType.address.rawValue: ResultType.address,
@@ -27,8 +29,17 @@ public class MKDataDetectorService {
         NSTextCheckingResult.CheckingType.transitInformation.rawValue: ResultType.transitInformation
     ]
     
+    /// Initializes and returns an `MKDataDetectorService` instance.
     public init() {}
     
+    /// Generic implementation for extracting data from a single body of text.
+    ///
+    /// - Parameters:
+    ///   - textBody: A body of natural language text.
+    ///   - detector: The detector to use for extraction.
+    ///   - types: Types to match.
+    /// - Returns: A generic array of `AnalysisResult` instances or `nil` if no matches could be found.
+    /// - Note: The `detector` parameter is optional, and is only useful for preventing redundant generation of the data detector in subsequent requests to this function.
     internal func extractData<T>(fromTextBody textBody: String, withDetector detector: NSDataDetector? = nil, withResultTypes types: [ResultType]) -> [AnalysisResult<T>]? {
         var analysisResults = [AnalysisResult<T>]()
         let dataDetector: NSDataDetector
@@ -55,6 +66,13 @@ public class MKDataDetectorService {
         return analysisResults.isEmpty ? nil : analysisResults
     }
     
+    /// Generic implementation for extracting data from a multiple bodies of text.
+    ///
+    /// - Parameters:
+    ///   - textBodies: An array of multiple bodies of natural language text.
+    ///   - types: The types to match.
+    /// - Returns: A generic array of `[AnalysisResult]` instances or `nil` if no matches could be found in any of the text bodies.
+    /// - Note: Inside the returned array, a non-empty `[AnalysisResult]` instance is returned for each text body which contains a match.
     internal func extractData<T>(fromTextBodies textBodies: [String], withResultTypes types: [ResultType]) -> [[AnalysisResult<T>]]? {
         var result = [[AnalysisResult<T>]]()
         guard let detector = dataDetectorOfType(withResultTypes: types) else { return nil }
