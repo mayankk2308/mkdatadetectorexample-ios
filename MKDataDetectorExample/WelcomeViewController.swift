@@ -23,7 +23,7 @@ class WelcomeViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         eventTypeField.delegate = self
         addressTypeField.delegate = self
-//        testOtherExamples()
+        // try other fields such as `addressTypeField` here
         if let eventLabelResults = dataDetectorService.extractInformation(fromTextBody: eventLabel.text!, withResultTypes: .date, .link, .address, .phoneNumber) {
             eventLabel.highlightData(withResults: eventLabelResults, withColor: .purple)
         }
@@ -43,19 +43,6 @@ class WelcomeViewController: UIViewController, UITextFieldDelegate {
             }
         }
     }
-    
-    func testOtherExamples() {
-        let meeting = "Meeting at 9pm next Monday"
-        guard let meetingDates = meeting.dates else { return }
-        for meetingDate in meetingDates { print(meetingDate) }
-        guard let meetingResults = dataDetectorService.extractDates(fromTextBody: meeting) else { return }
-        dataDetectorService.addEventToDefaultCalendar(withAnalysisResult: meetingResults.first!) { success in
-            if success {
-                print("event added to calendar!")
-            }
-        }
-    }
-
 }
 
 extension UILabel {

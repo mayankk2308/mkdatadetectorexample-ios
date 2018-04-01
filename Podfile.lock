@@ -1,12 +1,12 @@
 PODS:
-  - MKDataDetector (1.0.0)
+  - MKDataDetector (2.0.1)
 
 DEPENDENCIES:
   - MKDataDetector
 
 SPEC CHECKSUMS:
-  MKDataDetector: 1a5bca1012e90870828b0f0c3bb601dc55a21cd2
+  MKDataDetector: def76f6c495bd9ca94c942e1749a8058396ce201
 
 PODFILE CHECKSUM: 7b866f8254bb2642f064880a3fdbebae754627ee
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.4.0

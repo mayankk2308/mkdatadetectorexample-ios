@@ -3,7 +3,7 @@
 //  MKDataDetector
 //
 //  Created by Mayank Kumar on 7/8/17.
-//  Copyright © 2017 Mayank Kumar. Available under the MIT license.
+//  Copyright 2017 Mayank Kumar. Available under the MIT license.
 //
 
 import Foundation
@@ -46,8 +46,8 @@ public class MKDataDetectorService {
         if detector != nil {
             dataDetector = detector!
         } else {
-            guard let detector = dataDetectorOfType(withResultTypes: types) else { return nil }
-            dataDetector = detector
+            guard let newDetector = dataDetectorOfType(withResultTypes: types) else { return nil }
+            dataDetector = newDetector
         }
         let matches = dataDetector.matches(in: textBody, range: NSRange(location: 0, length: (textBody as NSString).length))
         if matches.isEmpty {

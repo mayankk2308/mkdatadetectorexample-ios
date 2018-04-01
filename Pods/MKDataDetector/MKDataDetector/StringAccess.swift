@@ -3,7 +3,7 @@
 //  MKDataDetector
 //
 //  Created by Mayank Kumar on 7/16/17.
-//  Copyright © 2017 Mayank Kumar. Available under the MIT license.
+//  Copyright 2017 Mayank Kumar. Available under the MIT license.
 //
 
 import Foundation
@@ -47,7 +47,7 @@ public extension String {
     private func retrieveMappedData<T>(withResultType type: ResultType) -> [T]? {
         let dataDetectorService = MKDataDetectorService()
         guard let results: [AnalysisResult<T>] = dataDetectorService.extractData(fromTextBody: self, withResultTypes: [type]) else { return nil }
-        return results.flatMap { $0.data }
+        return results.compactMap { $0.data }
     }
     
 }
@@ -75,9 +75,9 @@ extension MKDataDetectorService {
         let attributedString = NSMutableAttributedString(string: firstResult.source)
         for result in results {
             #if os(iOS)
-                attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor(cgColor: color), range: result.rangeInSource)
+                attributedString.addAttribute(NSAttributedStringKey.foregroundColor, value: UIColor(cgColor: color), range: result.rangeInSource)
             #elseif os(OSX)
-                attributedString.addAttribute(NSForegroundColorAttributeName, value: NSColor(cgColor: color) as Any, range: result.rangeInSource)
+                attributedString.addAttribute(NSAttributedStringKey.foregroundColor, value: NSColor(cgColor: color) as Any, range: result.rangeInSource)
             #endif
         }
         return attributedString
